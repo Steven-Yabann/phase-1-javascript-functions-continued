@@ -1,16 +1,11 @@
 // code your solution here
-function saturdayFun(activity = "roller-skate"){
-    return `This Saturday, I want to ${activity}!`
-}
+const saturdayFun = (activity = 'roller-skate') => `This Saturday, I want to ${activity}!`
 
-function mondayWork(activity = 'go to the office'){
-    return `This Monday, I will ${activity}.`
-}
 
-function wrapAdjective( wrapper = '*'){
-    const fun2 = function(adjective = 'special'){
-        return `You are ${wrapper}${adjective}${wrapper}!`
-    }
-    return fun2
-}
 
+const mondayWork = (activity = 'go to the office') => `This Monday, I will ${activity}.`
+
+
+const wrapAdjective = (wrapper = '*') => {return function( object = 'special'){
+    return `You are ${wrapper}${object}${wrapper}!`
+}}
